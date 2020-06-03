@@ -23,11 +23,16 @@ namespace MAutoUpdate.Test
                     FileName = "MAutoUpdate.exe",
                     Arguments = " MAutoUpdate.Test 0"
                 };
-                Process proc = Process.Start(processStartInfo);
-                if (proc != null)
+
+                try
                 {
-                    proc.WaitForExit();
+                    Process proc = Process.Start(processStartInfo);
+                    if (proc != null)
+                    {
+                        proc.WaitForExit();
+                    }
                 }
+                catch (Exception ex) { }
             }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

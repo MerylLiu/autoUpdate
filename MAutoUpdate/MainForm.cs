@@ -32,6 +32,7 @@ namespace MAutoUpdate
                 this.lblContent.Text = this.lblContent.Text + item + Environment.NewLine;
             }
         }
+
         #region 让窗体变成可移动
         [DllImport("user32.dll")]
         public static extern bool ReleaseCapture();

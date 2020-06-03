@@ -44,8 +44,9 @@ namespace MAutoUpdate
                         UpdateWork updateWork = new UpdateWork(programName, localAddress, isClickUpdate);
                         if(updateWork.UpdateVerList == null)
                         {
-                            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, programName);
-                           // Process.Start(path);
+                            //string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, programName);
+                            //Process.Start(path);
+                            Application.Exit();
                             return;
                         }
 
@@ -85,7 +86,6 @@ namespace MAutoUpdate
                                         FileName = System.Windows.Forms.Application.ExecutablePath,
                                         //设置启动动作,确保以管理员身份运行 
                                         Verb = "runas",
-
                                         Arguments = " " + programName + " " + silentUpdate
                                     };
                                     //如果不是管理员，则启动UAC 
