@@ -33,26 +33,26 @@ namespace MAutoUpdate
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.LBTitle = new System.Windows.Forms.Label();
             this.lblContent = new System.Windows.Forms.Label();
-            this.btnUpdateNow = new YButton();
-            this.btnUpdateLater = new YButton();
-            this.btnIgnore = new YButton();
+            this.btnUpdateNow = new MAutoUpdate.Control.YButton();
+            this.btnUpdateLater = new MAutoUpdate.Control.YButton();
+            this.btnIgnore = new MAutoUpdate.Control.YButton();
             this.SuspendLayout();
             // 
             // LBTitle
             // 
             this.LBTitle.AutoSize = true;
             this.LBTitle.BackColor = System.Drawing.Color.Transparent;
-            this.LBTitle.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Bold);
+            this.LBTitle.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold);
             this.LBTitle.ForeColor = System.Drawing.Color.DimGray;
             this.LBTitle.Location = new System.Drawing.Point(11, 13);
             this.LBTitle.Name = "LBTitle";
-            this.LBTitle.Size = new System.Drawing.Size(54, 19);
+            this.LBTitle.Size = new System.Drawing.Size(84, 19);
             this.LBTitle.TabIndex = 22;
-            this.LBTitle.Text = "新版本";
+            this.LBTitle.Text = "发现新版本";
             // 
             // lblContent
             // 
-            this.lblContent.Font = new System.Drawing.Font("微软雅黑", 11F);
+            this.lblContent.Font = new System.Drawing.Font("Microsoft YaHei", 11F);
             this.lblContent.ForeColor = System.Drawing.Color.DimGray;
             this.lblContent.Location = new System.Drawing.Point(112, 103);
             this.lblContent.Name = "lblContent";
@@ -63,7 +63,7 @@ namespace MAutoUpdate
             // 
             this.btnUpdateNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(173)))), ((int)(((byte)(25)))));
             this.btnUpdateNow.EnterImage = null;
-            this.btnUpdateNow.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.btnUpdateNow.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.btnUpdateNow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.btnUpdateNow.IsColorChange = true;
             this.btnUpdateNow.IsFontChange = false;
@@ -83,7 +83,7 @@ namespace MAutoUpdate
             // 
             this.btnUpdateLater.BackColor = System.Drawing.Color.White;
             this.btnUpdateLater.EnterImage = null;
-            this.btnUpdateLater.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.btnUpdateLater.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.btnUpdateLater.ForeColor = System.Drawing.Color.Black;
             this.btnUpdateLater.IsColorChange = true;
             this.btnUpdateLater.IsFontChange = false;
@@ -103,7 +103,7 @@ namespace MAutoUpdate
             // 
             this.btnIgnore.BackColor = System.Drawing.Color.White;
             this.btnIgnore.EnterImage = null;
-            this.btnIgnore.Font = new System.Drawing.Font("微软雅黑", 10F);
+            this.btnIgnore.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.btnIgnore.ForeColor = System.Drawing.Color.Black;
             this.btnIgnore.IsColorChange = true;
             this.btnIgnore.IsFontChange = false;
