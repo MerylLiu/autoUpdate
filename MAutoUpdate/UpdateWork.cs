@@ -50,8 +50,14 @@ namespace MAutoUpdate
                 tempinfo.Create();
             }
             localInfo.LoadXml();
-            UpdateVerList = GetServer(localInfo.ServerUpdateUrl);
-            CheckVer(localInfo.LocalVersion, localInfo.LocalIgnoreVersion, isClickUpdate);
+            try
+            {
+                UpdateVerList = GetServer(localInfo.ServerUpdateUrl);
+                CheckVer(localInfo.LocalVersion, localInfo.LocalIgnoreVersion, isClickUpdate);
+            }
+            catch (Exception ex)
+            {
+            }
         }
 
         public bool Do()

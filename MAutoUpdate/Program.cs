@@ -28,7 +28,7 @@ namespace MAutoUpdate
                 {
                     if(args.Length == 0)
                     {
-                        args = new string[] { "test.exe", "0" };
+                        args = new string[] { "MAutoUpdate.Test.exe", "0" };
                     }
 
                     string programName = args[0];
@@ -42,6 +42,13 @@ namespace MAutoUpdate
                     if (string.IsNullOrEmpty(programName) == false)
                     {
                         UpdateWork updateWork = new UpdateWork(programName, localAddress, isClickUpdate);
+                        if(updateWork.UpdateVerList == null)
+                        {
+                            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, programName);
+                           // Process.Start(path);
+                            return;
+                        }
+
                         if (updateWork.UpdateVerList.Count > 0)
                         {
                             /* 当前用户是管理员的时候，直接启动应用程序 
