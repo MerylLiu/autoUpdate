@@ -1,0 +1,2 @@
+# autoUpdate
+winform auto update
